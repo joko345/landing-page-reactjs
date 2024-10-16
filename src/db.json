@@ -139,7 +139,7 @@
       "id": "1",
       "judul": "Elden Ring Artbook",
       "harga": "10.10",
-      "countCart": 1
+      "countCart": 0
     },
     {
       "id": "2",
@@ -157,7 +157,7 @@
       "id": "4",
       "judul": "Horizon Zero Dawn Artbook",
       "harga": "40.10",
-      "countCart": 0
+      "countCart": 1
     },
     {
       "id": "5",

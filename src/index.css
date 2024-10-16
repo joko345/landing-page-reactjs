@@ -175,6 +175,13 @@ footer ul a{
   margin-right: 10px;
 }
 
+.judulbook{
+  position: relative;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  }
+
 .nav {
   color: #ddd;
   display: flex;

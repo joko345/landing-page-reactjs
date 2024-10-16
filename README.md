@@ -5,6 +5,7 @@ LINK CLOUDFLARE = https://fcdf85e9.landing-page-reactjs.pages.dev/
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> //mempersingkat penulisan kode dengan jsx
     npm install bootstrap   
+    npm install @mui/icons-material @mui/material @emotion/styled @emotion/react //icon arrow material icon
 
     reacthook menggunakan context api, dapat mengiirim value antar component secara realtime
     json-server --watch db.json --port 2002

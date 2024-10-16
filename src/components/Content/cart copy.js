@@ -2,8 +2,6 @@ import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../index.css';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 import book1 from '../bg/book1.jpg';
 import book2 from '../bg/book2.jpg';
@@ -120,12 +118,10 @@ export default function Cart() {
                                                                 <img src={getBookImage(item.id)} alt="Book Cover" />
                                                             </div>
                                                             <div className="col-md-3 col-lg-3 col-xl-3">
-                                                                <h6 className="judulbook">{currentBook.judul}</h6>
-                                                                </div>
-                                                                <div className="col-md-3 col-lg-3 col-xl-3">
-                                                                <h6 className="mb-0 quan">Quantity: {item.countCart}</h6>
-                                                                <button onClick={() => updateCart(item.id, item.countCart + 1)}> <ArrowUpwardIcon />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
-                                                                <button onClick={() => updateCart(item.id, Math.max(item.countCart - 1, 0))}><ArrowDownwardIcon/></button>
+                                                                <h6 className="text-muted judulbook">{currentBook.judul}</h6>
+                                                                <h6 className="mb-0">Quantity: {item.countCart}</h6>
+                                                                <button onClick={() => updateCart(item.id, item.countCart + 1)}>Increase</button>
+                                                                <button onClick={() => updateCart(item.id, Math.max(item.countCart - 1, 0))}>Decrease</button>
                                                             </div>
                                                         </div>
                                                     );
